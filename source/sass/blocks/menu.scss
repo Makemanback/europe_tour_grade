@@ -1,0 +1,17 @@
+.menu__link {
+    padding: 0 20px;
+    color: #48494D;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+
+    &:hover {
+        color: $pink-orange;
+    }
+
+    @media (min-width: $desktop-width) {
+        color: $darkest;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

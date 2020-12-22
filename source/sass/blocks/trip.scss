@@ -1,0 +1,141 @@
+.trip {
+    background-color: #fff;
+    background-image: url("../img/header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+    max-width: 100%;
+    
+    @media (min-width: $tablet-width) {
+        background-image: url("../img/mountains-x1.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+        background-size: cover;    
+    }
+}
+
+.trip--js {
+    margin-top: 370px;
+}
+
+.trip__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 80px;
+    padding-bottom: 108px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background: linear-gradient(180deg, transparent 35%, white 35%);
+
+
+    @media (min-width: $tablet-width) {
+        min-width: 400px;
+        padding-bottom: 0;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        background: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        align-items: flex-start;
+        max-width: 400px;
+        margin-left: 50%;
+        margin-top: 90px;
+        margin-bottom: 318px;
+    }
+}
+
+.trip__header {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 100px;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    
+    @media (min-width: $tablet-width) {
+        width: 400px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: left;
+        background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 30px;
+        font-size: 55px;
+        line-height: 80px;
+    }
+}
+
+.trip__paragraph {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: $dark;
+    letter-spacing: -0.5px;
+    text-align: center;
+
+
+    @media (min-width: $tablet-width) {
+        width: 400px;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+}
+
+.trip__order {
+    width: 288px;
+    text-align: left;
+    
+    @media (min-width: $tablet-width) {
+        width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 340px;
+    }
+
+    &::after {
+        position: absolute;
+    
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin-left: 193px;
+        
+        margin-top: -15px;
+    
+        content: "";
+    
+        background-image: url("../img/icon-arrow-bottom.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (min-width: $tablet-width) {
+            margin-left: 155px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-left: 255px;
+        }
+    }
+}

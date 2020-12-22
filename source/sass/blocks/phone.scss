@@ -1,0 +1,43 @@
+.phone {
+    position: relative;
+    margin-left: 90px;
+    color: $darkest;
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover {
+        color: $pink-orange;
+
+        .phone__icon {
+            color: $pink-orange;
+        }
+    }
+}
+
+.phone__icon {
+    position: absolute;
+    top: -2px;
+    left: -30px;
+
+}
+
+.phone--price {
+    margin-left: 0;
+    align-self: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $pink-orange;
+    text-decoration: underline;
+
+    @media (min-width: $desktop-width) {
+        color: #000000;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+.phone--header {
+    margin-left: 0;
+}

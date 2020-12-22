@@ -1,0 +1,12 @@
+.cards {
+    margin-bottom: 45px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 110px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+}

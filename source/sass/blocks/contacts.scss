@@ -1,0 +1,77 @@
+.contacts {
+    position: relative;
+    
+    
+    @media (min-width: $tablet-width) {
+        padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 390px;
+        padding-left: 90px;
+        border-right: 1px solid #D7D9DF;
+    }
+}
+
+.contacts__mail {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    font-size: 14px;
+    color: $pink-orange;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: underline;
+    text-align: center;
+    
+
+    @media (min-width: $tablet-width) {
+        padding-left: 41px;
+        text-align: left;
+    }
+}
+
+.contacts__phone {
+    position: relative;
+    margin-left: 0;
+    padding-left: 41px;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 400;
+    line-height: 32px;
+    color: $pink-orange;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        text-align: left;
+    }
+}
+
+.contacts__mail-icon {
+    position: absolute;
+    top: 52px;
+    left: 60px;
+
+    @media (min-width: $tablet-width) {
+        left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        left: 90px;   
+    }
+}
+
+.contacts__phone-icon {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+        left: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+        left: 93px;   
+    }
+}

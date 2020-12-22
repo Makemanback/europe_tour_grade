@@ -1,0 +1,44 @@
+.corporate {
+    width: 100%;
+    
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #D7D9DF;
+
+    @media (min-width: $desktop-width) {
+        margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: auto;
+        margin-top: 0;
+        padding-left: 50px;
+        padding-top: 0;
+        border-top: none;
+    }
+}
+
+.corporate__header {
+    width: auto;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        text-align: left;
+    }
+}
+
+.corporate__paragraph {
+    width: auto;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(20, 21, 23, 0.5);
+
+    @media (min-width: $desktop-width) {
+        width: 320px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,30 @@
+.button {
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #ffffff;
+    background-color: $pink-orange;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    cursor: pointer;
+
+
+    @media (min-width: $desktop-width) {
+        font-size: 12px;
+        line-height: 14.63px;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &:hover {
+        background-color: $orange;
+    }
+}

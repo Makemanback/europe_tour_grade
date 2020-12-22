@@ -1,0 +1,132 @@
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 568px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 40px;
+    
+    background-color: #fff;
+    z-index: 3;
+
+    @media (min-width: $tablet-width) {
+        align-items: flex-end;
+        width: 728px;
+        height: 444px;
+        
+        background-image: url("../../img/modal.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.modal__form {
+    width: 320px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 100px;
+    padding-bottom: 185px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        width: 390px;
+        padding-top: 72px;
+        padding-bottom: 67px;
+        background-color: #FBF8F8;
+    }
+}
+
+.modal__header {
+    position: relative;
+    width: 288px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    line-height: 42.5px;
+    font-weight: 600;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        content: "+7";
+        width: 18px;
+        height: 19px;
+        top: 110px;
+        left: 25px;
+        color: $darkest;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        z-index: 2;
+
+        @media (min-width: $tablet-width) {
+            left: 35px;
+        }
+    }
+}
+
+.modal__input {
+    width: 288px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    border: 1px solid rgba(44, 46, 63, 0.3);
+
+    @media (min-width: $tablet-width) {
+        width: 270px;
+    }
+}
+
+.modal__number {
+    position: relative;
+    padding-left: 51px;
+
+}
+
+.modal__submit {
+    width: 288px;
+
+    @media (min-width: $tablet-width) {
+        width: 176px;
+        padding: 18px 40px;
+    }
+}
+
+.modal__asteriks-icon {
+    position: absolute;
+    top: 218px;
+    left: 30px;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+        top: 190px;
+        left: 77px;    
+    }
+}
+
+.modal__close {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    border: none;
+    background-color: transparent;
+}
+
+.modal__close-icon {
+    width: 22px;
+    height: 22px;
+}

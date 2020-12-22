@@ -1,0 +1,48 @@
+// шрифты
+@import "fonts.scss";
+// нормалайз
+@import "normalize.scss";
+// глобальные стили
+@import "common.scss";
+// миксины
+@import "mixins.scss";
+// переменные
+@import "variables.scss";
+// главная
+@import "blocks/main.scss";
+// кнопка
+@import "blocks/button.scss";
+// шапка
+@import "blocks/header.scss";
+// шапка меню
+@import "blocks/menu.scss";
+// телефон
+@import "blocks/phone.scss";
+// шапка с туром
+@import "blocks/trip.scss";
+// места
+@import "blocks/places.scss";
+// описание мест
+@import "blocks/places-description.scss";
+// карточки мест
+@import "blocks/cards.scss";
+// отдельная карточка
+@import "blocks/card.scss";
+// карточки цен
+@import "blocks/prices.scss";
+// блок с ценами
+@import "blocks/price-block.scss";
+// блок обратная связь
+@import "blocks/feedback.scss";
+// футер
+@import "blocks/footer.scss";
+// футер пункты путешествий
+@import "blocks/trips.scss";
+// футер контакты
+@import "blocks/contacts.scss";
+// футер корпоративная инфа
+@import "blocks/corporate.scss";
+// модальное окно покупки
+@import "blocks/modal.scss";
+// модальное успешной отправки формы заказа
+@import "blocks/success.scss";

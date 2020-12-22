@@ -1,0 +1,297 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-bottom: 58px;
+    background-image: url("../../img/greece-review-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 560px;
+
+
+    &:nth-child(2) {
+        background-image: url("../../img/albania-review-mobile.jpg");
+        .card__review-author {
+            &::before {
+                background-image: url("../../img/review-2.jpg");
+            }
+        }
+    }
+    &:nth-child(3) {
+        background-image: url("../../img/makedonia-review-mobile.jpg");
+        .card__review-author {
+            &::before {
+                background-image: url("../../img/review-3.jpg");
+            }
+        }
+    }
+    &:nth-child(4) {
+        background-image: url("../../img/chernogoria-review-mobile.jpg");
+        .card__review-author {
+            &::before {
+                background-image: url("../../img/review-4.jpg");
+            }
+        }
+    }
+    &:nth-child(5) {
+        background-image: url("../../img/chroatia-review-mobile.jpg");
+        .card__review-author {
+            &::before {
+                background-image: url("../../img/review-5.jpg");
+            }
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        background-image: url("../../img/greece-review.jpg");
+        background-position: 0 360px;
+
+        &:nth-child(2) {
+            background-image: url("../../img/albania-review.jpg");
+        }
+        &:nth-child(3) {
+            background-image: url("../../img/makedonia-review.jpg");
+        }
+        &:nth-child(4) {
+            background-image: url("../../img/chernogoria-review.jpg");
+        }
+        &:nth-child(5) {
+            background-image: url("../../img/chroatia-review.jpg");
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 0;
+        background-image: url("../../img/greece-content.jpg");
+        background-size: contain;
+        background-position: 470px 0;
+
+
+        &:nth-child(2) {
+            background-image: url("../../img/albania-content.jpg");
+        }
+        &:nth-child(3) {
+            background-image: url("../../img/makedonia-content.jpg");
+        }
+        &:nth-child(4) {
+            background-image: url("../../img/chernogoria-content.jpg");
+        }
+        &:nth-child(5) {
+            background-image: url("../../img/chroatia-content.jpg");
+        }
+    }
+
+}
+
+.card__wrapper {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 565px;
+    }
+}
+
+.card__header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: -1.25px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 50px;
+        font-size: 55px;
+        line-height: 90px;
+        text-align: left;
+
+        &::after {
+            position: absolute;
+            bottom: -20px;
+            display: block;
+            width: 175px;
+            height: 3px;
+            background-color: $pink-orange;
+        
+            content: "";
+        }
+    }
+}
+
+.card__paragraph {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: $dark;
+    opacity: 0.7;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 370px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: left;   
+    }
+}
+
+.card__order {
+    width: 250px;
+
+    @media (min-width: $desktop-width) {
+        margin-left: 0;
+        margin-top: auto;
+    }
+}
+
+// отзыв
+.card__review {
+    position: relative;
+    top: 38px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 268px;
+    height: 431px;
+    padding: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #fff;
+
+    @media (min-width: $tablet-width) {
+        top: 110px;
+        width: 382px;
+        height: auto;
+        padding: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 114px;
+    }
+    
+}
+
+
+.card__review-header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: $dark;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 32px;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: left;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -10px;
+        left: 80px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 68px;
+        height: 1px;
+        background-color: $pink-orange;
+    
+        content: "";
+
+        @media (min-width: $tablet-width) {
+            left: 0;
+        }
+    }
+}
+
+.card__review-paragraph {
+    margin: 0;
+    margin-bottom: 68px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: $dark;
+    opacity: 0.7;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 35px;
+        text-align: left;
+    }
+}
+
+.card__review-author {
+    position: relative;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.47px;
+    text-align: center;
+    color: $dark;
+
+    @media (min-width: $tablet-width) {
+        top: -7px;
+        margin-left: 54px;
+        text-align: left;
+    }    
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
+
+    &::before {
+        position: absolute;
+        left: 95px;
+        top: -47px;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        width: 38px;
+        height: 38px;
+        background-image: url("../../img/review-1.jpg");
+        background-size: contain;
+
+        @media (min-width: $tablet-width) {
+            top: -7px;
+            left: -55px;
+        }       
+    }
+}
