@@ -2,7 +2,11 @@
     position: relative;
 
     @media (min-width: $desktop-width) {
-        margin-bottom: 240px;
+        padding-bottom: 506px;
+        background-image: url("../../img/europe.svg");
+        background-size: 1444px 1089px;
+        background-position: -130px 70px;
+        background-repeat: no-repeat;
     }
 }
 
@@ -45,7 +49,8 @@
     color: $dark;
     opacity: 0.3;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $pink-orange;
         opacity: 1;
     }

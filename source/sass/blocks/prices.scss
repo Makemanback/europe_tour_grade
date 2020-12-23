@@ -10,6 +10,7 @@
     @media (min-width: $desktop-width) {
         flex-direction: row;
         margin-bottom: 138px;
+        margin-top: -256px;
     }
 }
 
@@ -30,9 +31,12 @@
     }
 
     @media (min-width: $desktop-width) {
+        position: relative;
         justify-content: flex-start;
         margin-right: 0;
         margin-left: 0;
+        background-color: #fff;
+        z-index: 2;
     }
 }
 

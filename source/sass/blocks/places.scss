@@ -149,7 +149,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         .places__details {
             display: block;
             z-index: 2;

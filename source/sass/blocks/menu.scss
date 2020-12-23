@@ -5,7 +5,8 @@
     line-height: 28px;
     font-weight: 600;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $pink-orange;
     }
 

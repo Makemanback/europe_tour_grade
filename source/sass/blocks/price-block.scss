@@ -16,7 +16,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         border-color: $pink-orange;
         border-width: 3px;
 
